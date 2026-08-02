@@ -2928,19 +2928,26 @@ body.dark-mode .loss-sum {
 /* The equation sizes itself from the card rather than the viewport: `.eq` is
    white-space: nowrap and cannot reflow, so the font size is what has to give.
    The px value first is the fallback where cqw is unsupported, and the scroller
-   is the backstop for the narrowest phones. */
+   is the backstop for the narrowest phones.
+
+   5cqw sets the longest equation to ~80% of the card width, which is what phones
+   get: there the cap is far out of reach and the type scales with the card. The
+   cap binds from about a 600px card upward, so desktop still reads at 30px and
+   is unaffected by this ratio — it only governs how small screens behave. */
 .loss-sum .eq {
   font-size: 17px;
-  font-size: clamp(13px, 2.9cqw, 30px);
+  font-size: clamp(15px, 5cqw, 30px);
   line-height: 1.7;
   margin: 6px 0 12px;
   overflow-x: auto;
 }
 
-/* Continuation line — the definition that follows the objective it appears in. */
+/* Continuation line — the definition that follows the objective it appears in.
+   Held at 80% of the objective's ratio so it stays visibly subordinate at every
+   width rather than crowding the line it qualifies. */
 .loss-sum .eq-sub {
   font-size: 14px;
-  font-size: clamp(12px, 2.3cqw, 24px);
+  font-size: clamp(13px, 4cqw, 24px);
   margin-top: -6px;
 }
 
