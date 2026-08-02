@@ -1,0 +1,5 @@
+# Working notes, not part of the published page.
+note.md
+
+__pycache__/
+.DS_Store
