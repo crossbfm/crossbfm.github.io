@@ -16,6 +16,7 @@
       <a href="#abstract" class="nav-link">Abstract</a>
       <a href="#method" class="nav-link">Method</a>
       <a href="#results" class="nav-link">Results</a>
+      <a href="#real" class="nav-link">Real Robot</a>
       <a href="#bibtex" class="nav-link">BibTeX</a>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
         <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -914,6 +915,39 @@
             than any one of them.
           </p>
         </div>
+      </div>
+    </div>
+    <a href="#real" class="scroll-arrow" aria-label="Scroll to Real Robot">
+      <svg width="30" height="30" viewBox="0 0 30 30"><polyline points="7,12 15,20 23,12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <section id="real" class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Real Robot</h2>
+      <p>
+          We deploy our policy on real robot hardware to validate how the latent space transfers to the real world.
+      </p>
+      <div class="results-block reveal">
+        <h3 class="results-subhead"><span class="results-kicker">01</span>Goal Reaching</h3>
+        <div class="section-body">
+          <p>
+            A sequence of goal latents played on the real robot, held in turn and interpolated
+            between.
+          </p>
+        </div>
+
+        <figure class="fig real-fig">
+          <div class="fig-frame real-frame">
+            <video class="real-video" controls muted loop playsinline preload="none"
+              poster="assets/real_demo/goal_tracking.jpg"
+              aria-label="A humanoid robot on a gantry moving through a sequence of goal poses, driven by latent prompts">
+              <source src="assets/real_demo/goal_tracking.mp4" type="video/mp4">
+              Your browser cannot play this video.
+              <a href="assets/real_demo/goal_tracking.mp4">Download it instead.</a>
+            </video>
+          </div>
+        </figure>
       </div>
     </div>
     <a href="#bibtex" class="scroll-arrow" aria-label="Scroll to BibTeX">

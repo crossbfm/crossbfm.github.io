@@ -2076,6 +2076,23 @@ body.dark-mode .mae-sw-joint { background: #77acee; }
   }
 }
 
+/* ===== Real-robot video =====
+   One plain <video> with native controls rather than the scripted rollout player:
+   there is a single clip to show, nothing to synchronise against, and the native
+   element gives fullscreen and scrubbing for free. */
+.real-frame {
+  padding: 0;                 /* the frame is the video's own bezel here */
+  background: #000;           /* letterboxing reads as intentional, not as a gap */
+}
+
+.real-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;       /* holds the layout before the poster loads */
+  background: #000;
+}
+
 /* ===== Rollout demos =====
    Three embodiments side by side on one shared timeline. They are not toggled:
    the clips of a motion are cut to the same frames under one crop, so the

@@ -1,5 +1,10 @@
 # Working notes, not part of the published page.
 note.md
 
+# Camera masters for the real-robot clips. The page serves the encoded .mp4 beside
+# them (a fifteenth of the size); the originals are far too large to publish and
+# nothing on the site links to them.
+assets/real_demo/*.mov
+
 __pycache__/
 .DS_Store
