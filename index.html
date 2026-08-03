@@ -949,6 +949,51 @@
           </div>
         </figure>
       </div>
+
+      <div class="results-block reveal">
+        <h3 class="results-subhead"><span class="results-kicker">02</span>LAFAN Reference Motion</h3>
+        <div class="section-body">
+          <p>
+            A LAFAN clip encoded into the shared latent space and tracked on the real robot. The
+            prompt is a latent trajectory, not a joint-space reference.
+          </p>
+        </div>
+
+        <figure class="fig real-fig">
+          <div class="fig-frame real-frame">
+            <video class="real-video" controls muted loop playsinline preload="none"
+              poster="assets/real_demo/dance_lafan_2.jpg"
+              aria-label="A humanoid robot performing a dance motion encoded from a LAFAN reference clip">
+              <source src="assets/real_demo/dance_lafan_2.mp4" type="video/mp4">
+              Your browser cannot play this video.
+              <a href="assets/real_demo/dance_lafan_2.mp4">Download it instead.</a>
+            </video>
+          </div>
+        </figure>
+      </div>
+
+      <div class="results-block reveal">
+        <h3 class="results-subhead"><span class="results-kicker">03</span>Flow-Prompted Motion</h3>
+        <div class="section-body">
+          <p>
+            A latent trajectory sampled from the flow generator and played on the real robot. No
+            reference motion is involved at any point &mdash; the behavior is generated in the
+            latent space and executed directly.
+          </p>
+        </div>
+
+        <figure class="fig real-fig">
+          <div class="fig-frame real-frame">
+            <video class="real-video" controls muted loop playsinline preload="none"
+              poster="assets/real_demo/gen_dance.jpg"
+              aria-label="A humanoid robot performing a dance motion sampled from the flow generator">
+              <source src="assets/real_demo/gen_dance.mp4" type="video/mp4">
+              Your browser cannot play this video.
+              <a href="assets/real_demo/gen_dance.mp4">Download it instead.</a>
+            </video>
+          </div>
+        </figure>
+      </div>
     </div>
     <a href="#bibtex" class="scroll-arrow" aria-label="Scroll to BibTeX">
       <svg width="30" height="30" viewBox="0 0 30 30"><polyline points="7,12 15,20 23,12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
